@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+html {
+  background-color: #b6b6b6;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  font-weight: bolder;
+}
+body {
+  background-color: #fff;
+}
+
+#logo {
+  width: 4rem;
+  padding-top: 0.5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #b6b6b6;
+  height: 5rem;
+}
+#first-ul,
+#second-ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+nav ul li {
+  margin: 1rem;
+  padding: 0.5rem;
+  float: right;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+#second-ul li:first-child a {
+  color: blue;
+}
+/* header */
+header {
+  position: sticky;
+  top: 1rem;
+}
+header div ul {
+  display: flex;
+  justify-content: flex-start;
+}
+header div ul li {
+  list-style: none;
+  margin: 0.2rem;
+  pad: 0.5rem;
+}
+header div ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  font-weight: 900;
+}
+
+/* div */
+.cuadro div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin: 2px;
+}
+.cuadro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
