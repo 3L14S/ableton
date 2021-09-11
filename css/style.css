@@ -5,11 +5,16 @@ html {
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: small;
-  font-weight: bolder;
+  font-weight: bolder; 
 }
-body {
+body {  
   background-color: #fff;
+  margin-left: 10rem;
+  margin-right: 10rem;  
+  margin-top: 0;
+  
 }
+/* nav var */
 
 #logo {
   width: 4rem;
@@ -56,25 +61,92 @@ header div ul li {
   list-style: none;
   margin: 0.2rem;
   pad: 0.5rem;
+
 }
 header div ul li a {
   text-decoration: none;
   color: black;
   font-size: medium;
   font-weight: 900;
+  padding: 0 2rem 0 0;
 }
-
-/* div */
-.cuadro div {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  margin: 2px;
+header div ul li:first-child a{
+  color: orangered;
 }
+/* contenido */
 .cuadro {
-  display: flex;
+  display: flex;  
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  
+}
+#ableton-logo {
+  background-image: url(../img/ableton-background-img.jpg);
+  background-repeat: no-repeat;   
+  background-size: cover;
+  background-position: center;  
+  width: 80%;
+  height: 80%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
+#first-description{  
+  width: 55%;  
+  margin-top: 4rem;
+}
+h2{
+  text-align: left;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+#first-description h2 a{
+  text-decoration: none;
+  color: blue;
+}
+p{
+  font-size: large;
+}
+
+
+#photos-yellow-box{   
+  height: 90vh;
+  background: linear-gradient(to right,#fff 40% ,rgba(255, 255, 0, 0.281) 40%);
+  position: relative;  
+  width: 100%;
+  position: relative;
+  
+}
+
+#amarillo{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;  
+  height: 100%;
+}
+#photo-yellow-1{
+  justify-self: flex-start;
+  width: 40%;
+}
+#photo-yellow-2{
+justify-self: flex-end;
+width: 35%;
+}
+
+
+
+
+#description-video{
+  width: 55%;
+}
+
+
+#video{
+  margin: 10rem 0;
+}
+#video p{
+  font-size: small;
+} 
+
