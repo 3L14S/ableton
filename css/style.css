@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 html {
-  background-color: #b6b6b6;
+  background-color: #b6b6b66e;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: small;
   font-weight: bolder; 
+  width: 100%;
+  box-sizing: border-box;
 }
-body {  
+body {    
   background-color: #fff;
-  margin-left: 10rem;
-  margin-right: 10rem;  
+  margin-left: 10%;
+  margin-right: 10%;  
   margin-top: 0;
-  
+  width: 80%;
 }
 /* nav var */
 
@@ -51,7 +53,10 @@ nav ul li a {
 /* header */
 header {
   position: sticky;
-  top: 1rem;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.548);
+  padding:0.3rem 0;  
 }
 header div ul {
   display: flex;
@@ -74,11 +79,12 @@ header div ul li:first-child a{
   color: orangered;
 }
 /* contenido */
-.cuadro {
+.main {
   display: flex;  
   flex-direction: column;
   justify-content: center;
   align-items: center;  
+  border-bottom: 2px solid #b6b6b6;
 }
 #ableton-logo {
   background-image: url(../img/ableton-background-img.jpg);
@@ -93,31 +99,32 @@ header div ul li:first-child a{
 }
 
 
-#first-description{  
-  width: 55%;  
+#text-description{  
+  width: 56%;  
   margin-top: 4rem;
 }
 h2{
   text-align: left;
   font-size: xx-large;
-  font-weight: bolder;
+  font-weight: 900;
 }
-#first-description h2 a{
+#text-description h2 a{
   text-decoration: none;
   color: blue;
 }
 p{
   font-size: large;
+  font-weight: 200;
 }
 
 
-#photos-yellow-box{   
+/* cuadro amarillo */
+
+#photos-yellow-box, #photos-green-box,#photos-purple-box{   
   height: 90vh;
   background: linear-gradient(to right,#fff 40% ,rgba(255, 255, 0, 0.281) 40%);
   position: relative;  
-  width: 100%;
-  position: relative;
-  
+  width: 100%;  
 }
 
 #amarillo{
@@ -135,7 +142,7 @@ justify-self: flex-end;
 width: 35%;
 }
 
-
+/* primer video */
 
 
 #description-video{
@@ -144,9 +151,116 @@ width: 35%;
 
 
 #video{
+  display: flex;
+  flex-direction: column;
   margin: 10rem 0;
+  justify-self: center;
+  align-self: center;
 }
+
 #video p{
   font-size: small;
 } 
 
+/* cuadro verde */
+
+#photos-green-box{
+  background: linear-gradient(to left,#fff 40% ,rgba(22, 255, 42, 0.281) 40%);
+  display: flex;
+}
+#green{
+  display: flex;
+  width: 90%;
+}
+#first-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#second-col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#photo-green-1{
+width: 60%;
+}
+
+#photo-green-2{
+width: 60%;
+}
+#photo-green-3{
+width: 100%;
+}
+
+/* imagen datos */
+
+#img-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+#data-img{
+  width: 80%;
+}
+
+
+
+/* imagenes violeta */
+
+
+#photos-purple-box{
+  background: linear-gradient(to right,#fff 20% ,rgba(171, 82, 255, 0.473) 20%,rgba(171, 82, 255, 0.473) 80%, #fff 80% );
+}
+#purple{
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#photo-purple-1{
+  width: 30%;
+}
+#photo-purple-2{
+  width: 40%;  
+  margin-left: 25%;
+}
+
+
+
+/* imagen azul */
+
+
+#photos-blue-box{
+width: 80%;
+margin: 5rem 0;
+display: flex;
+}
+
+#blue{
+  background-color: rgba(0, 110, 255, 0.459);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 10% 10%;
+}
+
+
+#photo-blue-1{
+  width: 50%;  
+}
+
+
+
+
+/* footer */
+
+
+footer{
+  background-color: #fff;
+  height: 700px;
+}
