@@ -91,14 +91,17 @@ header div ul li:first-child a{
   background-repeat: no-repeat;   
   background-size: cover;
   background-position: center;  
-  width: 80%;
-  height: 80%;
+  width: 50vw;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
+#ableton-logo img{
+width: 60vw;
+height: 40vh;
+}
 #text-description{  
   width: 56%;  
   margin-top: 4rem;
@@ -146,7 +149,7 @@ width: 35%;
 
 
 #description-video{
-  width: 55%;
+  width: 56%;
 }
 
 
@@ -154,10 +157,13 @@ width: 35%;
   display: flex;
   flex-direction: column;
   margin: 10rem 0;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
+  align-items: flex-start;
 }
-
+#video iframe{
+  width:100%;
+  height: 50vh;
+}
 #video p{
   font-size: small;
 } 
@@ -268,25 +274,11 @@ footer{
   justify-content: space-around;
 }
 
-#row-2, #row-3, #row-4{
-  display: flex;
-  justify-content: space-evenly;
-  
+footer a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
-#row-2 div, #row-3 div{
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-}
-
-
-#row-1{
-  font-size: 5rem;
-  padding-left: 3%;
-}
-
 
 h3{
   font-weight: 900;
@@ -295,12 +287,26 @@ h3{
   margin: 0;
 }
 
-footer a{
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
+#row-2, #row-3, #row-4{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+#row-2 div, #row-3 div{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  
 }
 
+
+
+#row-1{
+  font-size: 5rem;
+  padding-left: 3%;
+}
 
 
 #row-2 div div{
@@ -314,7 +320,7 @@ footer a{
 }
 
 #email{
-  background-color: rgba(145, 145, 145, 0.568);
+  background-color: rgba(145, 145, 145, 0.274);
   border: none;
   padding: 7px;
   padding-right: 100%;
@@ -332,5 +338,58 @@ footer a{
   width: 20%;
 }
 
+#row-3 > div:first-child >a{
+padding: 4px;
+}
+
+div>#selectors{
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  justify-content:flex-start;
+  
+}
+#country, #languages{
+  background-color:rgba(145, 145, 145, 0.274);
+  border: none;
+  padding:10px;
+}  
+#country {
+  width: 50%;
+}
+#languages{
+  margin-right: 1%;
+}
 
 
+
+
+#row-4{
+  justify-content: space-between;
+}
+#row-4 div{
+  width: 40%;
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  margin-left: 2%;
+}
+#last-footer{  
+  justify-content: flex-end;
+  margin-right: 5%; 
+}
+#last-footer img{
+  margin-left: 5%;
+}
+
+#row-4 div ul{
+  display: flex;
+  width: 100%;  
+  padding: 0;
+  justify-content: space-between;
+}
+
+#row-4 div ul li{
+  list-style-type: none; 
+  margin: 0 5px; 
+}
